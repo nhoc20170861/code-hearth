@@ -31,6 +31,9 @@
 
                 height: 100%;
             }
+            .clor-hearth-text {
+                color: rgb(225, 12, 168);
+            }
         </style>
     </head>
 
@@ -448,12 +451,10 @@
         </script>
 
         <div
-            class="center-text"
-            ,
+            id="center-hearth-text"
             style="
                 background-color: rgb(0, 0, 0);
                 width: 100%;
-                color: rgb(225, 12, 168);
                 height: 100%;
                 font-size: 45px;
                 font-style: italic;
@@ -467,4 +468,11 @@
             I LOVE U 3000
         </div>
     </body>
+
+    <script>
+        const divText = document.getElementById("center-hearth-text");
+        setTimeout(() => {
+            divText.classList.add("clor-hearth-text");
+        }, 3000);
+    </script>
 </html>
